@@ -1,0 +1,94 @@
+/*Style body by adding background image and set it to cover with horizontally and vertically center, add font-family*/
+
+body{
+    font-family: Arvo,serif;
+    background: url(Images/galaxy.jpg) no-repeat center center;
+    background-attachment: fixed; /*to make image fixed cover up entire screen*/
+    background-size:cover;
+}
+/*Style brand*/
+.logo {
+    height: 30px;
+}
+
+/*Style navigation bar*/
+.navbar-inverse{
+    background: rgba(0,0,0,0.5);
+}
+.nav li{
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-right: 30px;
+    padding: 10px 0;  
+}
+.nav li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #00FFB8;
+/*to make navigation bar same size when hovered subtract 1 px from actual padding*/
+    padding-bottom: 9px; 
+}
+
+/*Style jumbotron*/
+.jumbotron{
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 2.5px;
+}
+
+/*limit the width of the icons section*/
+.container{
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+/*Style icons section using bootstrap grid system*/
+#bimage{
+    height: 100px;
+}
+.col-md-4{
+    text-align: center;
+    color: white;
+}
+.col-md-4 p{
+    font-size: 16px;
+}
+
+/*Style contact buttton*/
+.contact{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.btn{
+    background-color: rgba(0,255,184,0.5);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 7px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+/*Style footer*/
+.footer{
+    background-color: rgba(0,0,0,0.5);
+    color: grey;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 0;    
+}
+
+/*use media queries to change icons size in small devices*/
+@media (max-width: 768px){
+    #bimage{
+        height: 70px;
+    }
+}
